@@ -1,0 +1,67 @@
+{
+  "id": "testimonial",
+  "type": "SharedSlice",
+  "name": "Testimonial",
+  "description": "A testimonial section with company logo, quote, and author information",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Centered testimonial with logo and author details",
+      "imageUrl": "",
+      "primary": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Company Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "quote": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Quote",
+            "single": "paragraph,strong,em",
+            "placeholder": "Enter the testimonial quote"
+          }
+        },
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "Author Avatar",
+            "constraint": {
+              "width": 64,
+              "height": 64
+            },
+            "thumbnails": []
+          }
+        },
+        "author_name": {
+          "type": "Text",
+          "config": {
+            "label": "Author Name",
+            "placeholder": "Name Surname"
+          }
+        },
+        "author_position": {
+          "type": "Text",
+          "config": {
+            "label": "Position",
+            "placeholder": "Position"
+          }
+        },
+        "author_company": {
+          "type": "Text",
+          "config": {
+            "label": "Company Name",
+            "placeholder": "Company name"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
